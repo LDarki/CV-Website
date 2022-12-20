@@ -9,7 +9,67 @@
         <link rel="stylesheet" href="assets/css/tailwind.css">
         <link rel="stylesheet" href="assets/css/index.css">
     </head>
-    <body>
+    <body class="w-full h-full">
+        <!-- Main -->
+        <div class="drop-shadow-custom">
+            <div class="flex items-center flex-col bg-main h-96">
+                <!-- Navbar -->
+                <div class="header">
+                    <!-- Left list -->
+                    <ul class="flex items-center navbar">
+                        <li class="nav-link">
+                            <a href="#!">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Right list -->
+                    <ul class="flex items-center navbar">
+                        <li class="nav-link">
+                            <a href="#skills">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Main Info -->
+                <div class="flex justify-around items-center">
+                    <!-- User image -->
+                    <div class="flex justify-around w-4/12 p-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="profile-img w-52 drop-shadow-custom"/>
+                    </div>
+                    <!-- Content -->
+                    <div class="flex justify-around w-6/12 text-white flex-col p-4">
+                        <h1 class="text-3xl">
+                            Hi, i'm ${username}
+                        </h1>
+                        <p class="mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>
+                            Cras congue sem condimentum massa blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/WaveTop.svg" class="-mt-2"/>
+        </div>
+
+        <!-- Information -->
+        <div class="flex justify-around">
+            <!-- Left Content -->
+            <div class="flex justify-around">
+                &nbsp;
+            </div>
+            <!-- Right Content -->
+            <div class="flex justify-around">
+                &nbsp;
+            </div>
+        </div>
         <script src="assets/js/index.js" async></script>
     </body>
 </html>
