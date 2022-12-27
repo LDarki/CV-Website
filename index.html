@@ -1,75 +1,245 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/tailwind.css">
-        <link rel="stylesheet" href="assets/css/index.css">
-    </head>
-    <body class="w-full h-full">
-        <!-- Main -->
-        <div class="drop-shadow-custom">
-            <div class="flex items-center flex-col bg-main h-96">
-                <!-- Navbar -->
-                <div class="header">
-                    <!-- Left list -->
-                    <ul class="flex items-center navbar">
-                        <li class="nav-link">
-                            <a href="#!">
-                                Home
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Right list -->
-                    <ul class="flex items-center navbar">
-                        <li class="nav-link">
-                            <a href="#skills">
-                                Skills
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#contact">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
-                <!-- Main Info -->
-                <div class="flex justify-around items-center">
-                    <!-- User image -->
-                    <div class="flex justify-around w-4/12 p-4">
-                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="profile-img w-52 drop-shadow-custom"/>
-                    </div>
-                    <!-- Content -->
-                    <div class="flex justify-around w-6/12 text-white flex-col p-4">
-                        <h1 class="text-3xl">
-                            Hi, i'm ${username}
-                        </h1>
-                        <p class="mt-2">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>
-                            Cras congue sem condimentum massa blandit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <img src="assets/img/WaveTop.svg" class="-mt-2"/>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CV Website | AP 4.0</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
 
-        <!-- Information -->
-        <div class="flex justify-around">
-            <!-- Left Content -->
-            <div class="flex justify-around">
-                &nbsp;
+<body class="w-full h-full bg-indigo-50">
+    <!-- Main -->
+    <div class="drop-shadow-custom">
+        <div class="flex items-center flex-col bg-main sm:w-46 md:h-96">
+            <!-- Navbar -->
+            <div class="header" id="navbar">
+                <!-- Left list -->
+                <ul class="flex items-center navbar">
+                    <li class="nav-link">
+                        <a href="#!">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+                <!-- Right list -->
+                <ul class="flex items-center navbar">
+                    <li class="nav-link">
+                        <a href="#Skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#Contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!-- Right Content -->
-            <div class="flex justify-around">
-                &nbsp;
+
+            <!-- Main Info -->
+            <div class="flex justify-around items-center flex-col-sm">
+                <!-- User image -->
+                <div class="flex justify-around w-6/12 sm:w-4/12 p-4">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg"
+                        class="profile-img w-52 drop-shadow-custom" />
+                </div>
+                <!-- Content -->
+                <div class="flex justify-around w-8/12 sm:w-6/12 text-white flex-col p-4">
+                    <h1 class="text-2xl sm:text-3xl">
+                        Hi, i'm ${username}
+                    </h1>
+                    <p class="mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                        Cras congue sem condimentum massa blandit.
+                    </p>
+                </div>
             </div>
         </div>
-        <script src="assets/js/index.js" async></script>
-    </body>
+        <div class="h-12 w-12 drop-shadow-custom flex justify-around items-center absolute z-10 fix-center">
+            <i class="fa fa-2x bounce fa-angle-down text-white"></i>
+        </div>
+        <img src="assets/img/WaveTop.svg" id="wave" class="-mt-2 z-0" />
+    </div>
+
+    <!-- Information -->
+    <div class="flex justify-around w-full p-2 flex-col-sm items-center">
+
+        <!-- Column -->
+        <div class="flex justify-around w-4/12 p-4">
+            <h1>Bit about me</h1>
+        </div>
+
+        <!-- Row -->
+        <a id="Skills"></a>
+        <div class="flex justify-around w-full sm:w-8/12 items-center flex-col-sm">
+            <!-- Row -->
+            <div class="flex justify-around sm:w-4/12 w-8/12 p-4 flex-col">
+                <h1 class="text-center text-2xl font-semibold">Skills</h1>
+
+                <!-- Column -->
+                <div class="flex justify-around p-2">
+                    <div class="w-8/12">
+                        <h1>Web Design</h1>
+                    </div>
+                    <div class="w-4/12 text-yellow-300 flex justify-around items-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Column -->
+                <div class="flex justify-around p-2">
+                    <div class="w-8/12">
+                        <h1>UI / UX Design</h1>
+                    </div>
+                    <div class="w-4/12 text-yellow-300 flex justify-around items-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Column -->
+                <div class="flex justify-around p-2">
+                    <div class="w-8/12">
+                        <h1>Mobile Design</h1>
+                    </div>
+                    <div class="w-4/12 text-yellow-300 flex justify-around items-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Column -->
+                <div class="flex justify-around p-2">
+                    <div class="w-8/12">
+                        <h1>Communication</h1>
+                    </div>
+                    <div class="w-4/12 text-yellow-300 flex justify-around items-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row -->
+            <div class="flex justify-around sm:w-4/12 w-8/12 p-4 flex-col">
+                <h1 class="text-center text-2xl font-semibold">Hobbies</h1>
+
+                <!-- Column -->
+                <div class="flex justify-around p-2">
+                    <div class="w-8/12">
+                        <h1>Sports</h1>
+                    </div>
+                    <div class="w-4/12 text-indigo-500 flex items-center">
+                        <i class="fa fa-heart-pulse"></i>
+                    </div>
+                </div>
+
+                <!-- Column -->
+                <div class="flex justify-around p-2">
+                    <div class="w-8/12">
+                        <h1>Study</h1>
+                    </div>
+                    <div class="w-4/12 text-indigo-500 flex items-center">
+                        <i class="fa fa-book"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <a id="Contact"></a>
+    <div class="relative flex items-center justify-around p-6 flex-col-sm">
+        <div class="flex sm:w-4/12 w-full">
+            <div class="p-6 bg-white shadow-xl sm:rounded-lg">
+                <h1 class="text-4xl sm:text-5xl text-gray-800 font-extrabold tracking-tight">
+                    Get in touch
+                </h1>
+                <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 mt-2">
+                    Fill in the form to start a conversation
+                </p>
+
+                <div class="flex items-center mt-8 text-gray-600 ">
+                    <i class="fa fa-location-dot fa-2x text-gray-500"></i>
+                    <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                        ${city}
+                    </div>
+                </div>
+
+                <div class="flex items-center mt-4 text-gray-600">
+                    <i class="fa fa-phone fa-2x text-gray-500"></i>
+                    <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                        ${phone}
+                    </div>
+                </div>
+
+                <div class="flex items-center mt-2 text-gray-600">
+                    <i class="fa fa-envelope fa-2x text-gray-500"></i>
+                    <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                        ${mail}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex sm:w-4/12 w-full">
+            <form class="p-6 w-full flex flex-col justify-center">
+                <div class="flex flex-col">
+                    <label for="name" class="hidden">Full Name</label>
+                    <input type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                </div>
+
+                <div class="flex flex-col mt-2">
+                    <label for="email" class="hidden">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                </div>
+
+                <div class="flex flex-col mt-2">
+                    <label for="tel" class="hidden">Number</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                </div>
+
+                <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="relative bg-custom p-4">
+        <div class="flex items-center md:justify-between justify-around">
+            <img src="assets/img/ap-4.0.svg"/>
+            <div class="text-sm text-white font-semibold py-1">
+                Copyright © <span>2022</span>
+                <a href="https://github.com/LDarki" class="text-white hover:text-gray-300"
+                    target="_blank">
+                    LDarki
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js" async></script>
+</body>
+
 </html>

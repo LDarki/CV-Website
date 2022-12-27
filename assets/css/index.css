@@ -9,13 +9,19 @@
     background: linear-gradient(180deg, rgba(71,33,131,1) 0%, rgba(75,86,210,1) 100%);
 }
 
+.text-custom {
+    color: rgba(75,86,210,1);
+}
+
+.bg-custom {
+    background: rgba(75,86,210,1);
+}
+
 .drop-shadow-custom {
     filter: drop-shadow( 3px 3px 5px rgba(0, 0, 0, .5));
 }
 
 .header {
-    position: sticky;
-    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -38,4 +44,30 @@
 
 .profile-img {
     border-radius: 50%;
+}
+
+.fix-center {
+    left: calc(50% - 1.5rem);
+}
+
+@media screen and (max-width: 768px){
+    .flex-col-sm {
+        flex-direction: column !important;
+    }
+}
+
+@-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-15px);} 
+    60% {-webkit-transform: translateY(-5px);} 
+} 
+
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-15px);} 
+    60% {transform: translateY(-5px);} 
+}
+
+.bounce { 
+    animation: bounce 1s infinite;
 }
