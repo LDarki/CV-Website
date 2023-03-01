@@ -51,7 +51,7 @@
                 <!-- Content -->
                 <div class="flex justify-around w-8/12 sm:w-6/12 text-white flex-col p-4">
                     <h1 class="text-2xl sm:text-3xl">
-                        Hi, i'm ${username}
+                        Hi, i'm Allan Harvey
                     </h1>
                     <p class="mt-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
@@ -60,24 +60,21 @@
                 </div>
             </div>
         </div>
-        <div class="h-12 w-12 drop-shadow-custom flex justify-around items-center absolute z-10 fix-center">
-            <i class="fa fa-2x bounce fa-angle-down text-white"></i>
-        </div>
         <img src="assets/img/WaveTop.svg" id="wave" class="-mt-2 z-0" />
     </div>
 
     <!-- Information -->
     <div class="flex justify-around w-full p-2 flex-col-sm items-center">
-
-        <!-- Column -->
-        <div class="flex justify-around w-4/12 p-4">
-            <h1>Bit about me</h1>
-        </div>
-
         <!-- Row -->
         <a id="Skills"></a>
         <div class="flex justify-around w-full sm:w-8/12 items-center flex-col-sm">
             <!-- Row -->
+            <div class="flex justify-around sm:w-6/12 w-8/12 p-4 flex-col">
+                Web development is the process of creating websites, web applications, and other digital products that
+                are accessed through the internet. It involves a variety of skills, including programming, web design,
+                server management, database administration, and content creation.
+            </div>
+           <!-- Row -->
             <div class="flex justify-around sm:w-4/12 w-8/12 p-4 flex-col">
                 <h1 class="text-center text-2xl font-semibold">Skills</h1>
 
@@ -137,31 +134,62 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Row -->
-            <div class="flex justify-around sm:w-4/12 w-8/12 p-4 flex-col">
-                <h1 class="text-center text-2xl font-semibold">Hobbies</h1>
+    <!-- Projects Carousel -->
 
-                <!-- Column -->
-                <div class="flex justify-around p-2">
-                    <div class="w-8/12">
-                        <h1>Sports</h1>
-                    </div>
-                    <div class="w-4/12 text-indigo-500 flex items-center">
-                        <i class="fa fa-heart-pulse"></i>
-                    </div>
+    <div class="max-w-xl mx-auto p-6 text-center">
+        <h4 class="text-xl font-bold">Projects</h4>
+        <div class="relative mt-4 shadow-2xl">
+
+            <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+
+                <div class="duration-700 ease-in-out slide fade-in">
+                    <img src="assets/img/carousel-1.jpeg" class="aspect-video block w-full" alt="...">
                 </div>
 
-                <!-- Column -->
-                <div class="flex justify-around p-2">
-                    <div class="w-8/12">
-                        <h1>Study</h1>
-                    </div>
-                    <div class="w-4/12 text-indigo-500 flex items-center">
-                        <i class="fa fa-book"></i>
-                    </div>
+                <div class="duration-700 ease-in-out slide fade-in">
+                    <img src="assets/img/carousel-2.jpeg" class="aspect-video block w-full" alt="...">
+                </div>
+
+                <div class="duration-700 ease-in-out slide fade-in">
+                    <img src="assets/img/carousel-3.jpeg" class="aspect-video block w-full" alt="...">
                 </div>
             </div>
+
+            <div class="flex custom-shadow-2 absolute bottom-3 left-1/2 z-30 space-x-3 transform -translate-x-1/2">
+                <button type="button" class="dot w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                    onclick="currentSlide(1)"></button>
+                <button type="button" class="dot w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    onclick="currentSlide(2)"></button>
+                <button type="button" class="dot w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    onclick="currentSlide(3)"></button>
+            </div>
+
+            <button type="button"
+                class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                onclick="moveSlide(-1)">
+                <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-5 h-5 custom-shadow text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </span>
+            </button>
+            <button type="button"
+                class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                onclick="moveSlide(1)">
+                <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-5 h-5 custom-shadow text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </span>
+            </button>
         </div>
     </div>
 
@@ -181,21 +209,21 @@
                 <div class="flex items-center mt-8 text-gray-600 ">
                     <i class="fa fa-location-dot fa-2x text-gray-500"></i>
                     <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                        ${city}
+                        6211 W Sherman Dr
                     </div>
                 </div>
 
                 <div class="flex items-center mt-4 text-gray-600">
                     <i class="fa fa-phone fa-2x text-gray-500"></i>
                     <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                        ${phone}
+                        (698) 240-4105
                     </div>
                 </div>
 
                 <div class="flex items-center mt-2 text-gray-600">
                     <i class="fa fa-envelope fa-2x text-gray-500"></i>
                     <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                        ${mail}
+                        allan.harvey@gmail.com
                     </div>
                 </div>
             </div>
@@ -204,20 +232,24 @@
             <form class="p-6 w-full flex flex-col justify-center">
                 <div class="flex flex-col">
                     <label for="name" class="hidden">Full Name</label>
-                    <input type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                    <input type="name" name="name" id="name" placeholder="Full Name"
+                        class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
                 </div>
 
                 <div class="flex flex-col mt-2">
                     <label for="email" class="hidden">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                    <input type="email" name="email" id="email" placeholder="Email"
+                        class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
                 </div>
 
                 <div class="flex flex-col mt-2">
                     <label for="tel" class="hidden">Number</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                    <input type="tel" name="tel" id="tel" placeholder="Telephone Number"
+                        class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
                 </div>
 
-                <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                <button type="submit"
+                    class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
                     Submit
                 </button>
             </form>
@@ -228,11 +260,10 @@
 
     <footer class="relative bg-custom p-4">
         <div class="flex items-center md:justify-between justify-around">
-            <img src="assets/img/ap-4.0.svg"/>
+            <img src="assets/img/ap-4.0.svg" />
             <div class="text-sm text-white font-semibold py-1">
                 Copyright © <span>2022</span>
-                <a href="https://github.com/LDarki" class="text-white hover:text-gray-300"
-                    target="_blank">
+                <a href="https://github.com/LDarki" class="text-white hover:text-gray-300" target="_blank">
                     LDarki
                 </a>
             </div>
