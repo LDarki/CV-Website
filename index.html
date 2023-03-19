@@ -15,9 +15,11 @@
 <body class="w-full h-full bg-indigo-50 overflow-hidden">
 
     <!-- overlay -->
-    <div id="modal_overlay" onclick="closeModal()" class="z-20 absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0">
+    <div id="modal_overlay"
+        class="z-20 absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0">
         <!-- modal -->
-        <div id="modal" class="z-20 pacity-0 transform relative w-10/12 md:w-1/2 h-1/2 md:h-3/4 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
+        <div id="modal"
+            class="z-20 pacity-0 transform relative w-10/12 md:w-1/2 h-1/2 md:h-3/4 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
 
             <!-- header -->
             <div class="px-4 py-3 border-b border-gray-200">
@@ -26,20 +28,22 @@
 
             <!-- body -->
             <div class="w-full p-3">
-                Entiendo que crean que lo descargué de internet y no lo modifiqué, pero siempre pueden mirar el código en el repo de github 
+                Entiendo que crean que lo descargué de internet y no lo modifiqué, pero siempre pueden mirar el código
+                en el repo de github
                 <br><br>
-                <a href="https://github.com/LDarki/CV-Website" class="cursor-pointer text-indigo-600">https://github.com/LDarki/CV-Website</a>
+                <a href="https://github.com/LDarki/CV-Website"
+                    class="cursor-pointer text-indigo-600">https://github.com/LDarki/CV-Website</a>
                 <br><br>
                 Normalmente yo uso el inglés como lengua cuando programo. <br>
-                Si con estos cambios siguen creyendo que este sitio es descargado, quisiera tener pruebas de dicha acusación.
+                Si con estos cambios siguen creyendo que este sitio es descargado, quisiera tener pruebas de dicha
+                acusación.
             </div>
 
             <!-- footer -->
-            <div class="absolute bottom-0 left-0 px-4 py-3 border-t border-gray-200 w-full flex justify-end items-center gap-3">
-                <button 
-                    onclick="closeModal()"
-                    class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded text-white focus:outline-none"
-                >Cerrar</button>
+            <div
+                class="absolute bottom-0 left-0 px-4 py-3 border-t border-gray-200 w-full flex justify-end items-center gap-3">
+                <button onclick="closeModal()"
+                    class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded text-white focus:outline-none">Cerrar</button>
             </div>
         </div>
     </div>
@@ -65,6 +69,11 @@
                         </a>
                     </li>
                     <li class="nav-link">
+                        <a href="#Aboutme">
+                            Sobre mi
+                        </a>
+                    </li>
+                    <li class="nav-link">
                         <a href="#Contact">
                             Contacto
                         </a>
@@ -85,8 +94,7 @@
                         Hola, soy Allan Harvey
                     </h1>
                     <p class="mt-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-                        Cras congue sem condimentum massa blandit.
+                        Soy un desarrollador web especializado en el front-end.
                     </p>
                 </div>
             </div>
@@ -101,9 +109,12 @@
         <div class="flex justify-around w-full sm:w-8/12 items-center flex-col-sm">
             <!-- Row -->
             <div class="flex justify-around sm:w-6/12 w-8/12 p-4 flex-col">
-                El desarrollo web es el proceso de creación de sitios web, aplicaciones web y otros productos digitales a los que se accede a través de Internet. Implica una variedad de habilidades, que incluyen programación, diseño web, administración de servidores, administración de bases de datos y creación de contenido.
+                El desarrollo web es el proceso de creación de sitios web, aplicaciones web y otros productos digitales
+                a los que se accede a través de Internet. Implica una variedad de habilidades, que incluyen
+                programación, diseño web, administración de servidores, administración de bases de datos y creación de
+                contenido.
             </div>
-           <!-- Row -->
+            <!-- Row -->
             <div class="flex justify-around sm:w-4/12 w-8/12 p-4 flex-col">
                 <h1 class="text-center text-2xl font-semibold">Habilidades</h1>
 
@@ -166,6 +177,41 @@
         </div>
     </div>
 
+    <!-- Sobre Mi -->
+    <section class="relative">
+        <div class="relative mt-20 mb-20 lg:mt-52">
+            <a id="Aboutme"></a>
+            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+                <!-- Image -->
+                <div class="flex flex-1 justify-center z-10 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="assets/img/aboutme.svg"
+                        alt="" />
+                </div>
+                <!-- Content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-3xl text-indigo-600">Sobre Mi</h1>
+                    <p class="text-gray-700 my-4 text-xl text-center lg:text-left sm:w-3/4 lg:w-full">
+                        Tengo 34 años y soy un apasionado diseñador UI/UX y desarrollador web con más de una década de experiencia. <br>
+                        Me encanta crear diseños atractivos y fáciles de usar que realmente reflejen la marca de mis clientes. <br>
+                        Además, siempre pongo al usuario en el centro de todo lo que hago y realizo investigaciones exhaustivas para asegurarme de que mis diseños sean intuitivos y útiles para ellos.
+                    </p>
+                </div>
+            </div>
+            <!-- Rounded Rectangle -->
+            <div class="
+                hidden
+                lg:block
+                overflow-hidden
+                bg-indigo-500
+                rounded-r-full
+                absolute
+                h-80
+                w-2/4
+                -bottom-10
+                -left-36
+            "></div>
+        </div>
+    </section>
     <!-- Projects Carousel -->
 
     <div class="max-w-xl mx-auto p-6 text-center">

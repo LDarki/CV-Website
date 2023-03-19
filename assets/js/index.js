@@ -63,6 +63,8 @@ function showSlide(n) {
 
 // Modal
 
+scrollTo(1,1)
+
 // Declaración de variables
 const modal_overlay = document.querySelector('#modal_overlay');
 const modal = document.querySelector('#modal');
