@@ -4,10 +4,14 @@
   font-family: 'Lato', sans-serif;
 }
 
+// Fondo gradiente
+
 .bg-main {
   background: rgb(71, 33, 131);
   background: linear-gradient(180deg, rgba(71, 33, 131, 1) 0%, rgba(75, 86, 210, 1) 100%);
 }
+
+// Colores personalizados
 
 .text-custom {
   color: rgba(75, 86, 210, 1);
@@ -17,9 +21,21 @@
   background: rgba(75, 86, 210, 1);
 }
 
+// Sombras personalizadas
+
 .drop-shadow-custom {
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, .5));
 }
+
+.custom-shadow {
+  filter: drop-shadow(5px 5px 10px #000);
+}
+
+.custom-shadow-2 {
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, .5));
+}
+
+// Navbar
 
 .header {
   width: 100%;
@@ -42,19 +58,27 @@
   text-decoration: none;
 }
 
+// Imágen
+
 .profile-img {
   border-radius: 50%;
 }
 
+// Centrado absoluto
+
 .fix-center {
   left: calc(50% - 1.5rem);
 }
+
+// Cambiar dirección del flex en celular
 
 @media screen and (max-width: 768px) {
   .flex-col-sm {
     flex-direction: column !important;
   }
 }
+
+// Animación
 
 .fade-in {
   animation: fadeIn ease 2s;
@@ -112,12 +136,4 @@
   100% {
     opacity: 1;
   }
-}
-
-.custom-shadow {
-  filter: drop-shadow(5px 5px 10px #000);
-}
-
-.custom-shadow-2 {
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, .5));
 }
