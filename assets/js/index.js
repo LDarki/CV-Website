@@ -60,3 +60,26 @@ function showSlide(n) {
     dots[slideIndex - 1].classList.remove('bg-white');
     dots[slideIndex - 1].classList.add('bg-indigo-500');
 }
+
+// Modal
+
+// Declaración de variables
+const modal_overlay = document.querySelector('#modal_overlay');
+const modal = document.querySelector('#modal');
+
+// Función que cierra el modal
+function closeModal() {
+    const modalCl = modal.classList
+    const overlayCl = modal_overlay
+
+    modalCl.add('-translate-y-full') // Animación de movimiento
+
+    setTimeout(() => { // lo hacemos invisible
+        modalCl.add('opacity-0')
+    }, 100);
+
+    setTimeout(() => { // Agregamos scroll al body y ocultamos el backdrop
+      overlayCl.classList.add('hidden')
+      document.body.classList.remove('overflow-hidden')
+    }, 300);
+}
